@@ -7,10 +7,10 @@ depth cameras, like Microsoft Kinect.
 
 We used the `RGB-D SLAM Dataset`
 
-Given RGB photo:
+Given RGB photo: \
 ![alt text](RGB-Photo.png)
 
-and their Depth photo: 
+and the Depth photo: \
 ![alt text](Depth-Photo.png)
 
 This program uses the intrinsics of the depth camera for the back-projection of the pixels to the camera space and then, using the extrinsics and the trajectory it transforms the points to the world space.
