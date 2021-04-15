@@ -16,5 +16,5 @@ and the Depth photo: \
 This program uses the intrinsics of the depth camera for the back-projection of the pixels to the camera space and then, using the extrinsics and the trajectory it transforms the points to the world space.
 Finally, a 3D mesh of the observations is being written. 
 
-![alt text](Snap_close.jpg)
+![alt text](Snap_Close.jpg)
 ![alt text](Snap_overview.png)
