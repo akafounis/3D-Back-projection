@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Back-projection to 3D Space
 
-You can use the [editor on GitHub](https://github.com/akafounis/3D-Back-projection/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+_University Project_
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The goal is to generate 3D meshes from depth and color maps which can be captured by
+depth cameras, like Microsoft Kinect. 
 
-### Markdown
+We used the `RGB-D SLAM Dataset`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Given RGB photo: \
+![alt text](RGB-Photo.png)
 
-```markdown
-Syntax highlighted code block
+and the Depth photo: \
+![alt text](Depth-Photo.png)
 
-# Header 1
-## Header 2
-### Header 3
+This program uses the intrinsics of the depth camera for the back-projection of the pixels to the camera space and then, using the extrinsics and the trajectory it transforms the points to the world space.
+Finally, a 3D mesh of the observations is being written. 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/akafounis/3D-Back-projection/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![alt text](Snap_close.jpg)
+![alt text](Snap_overview.png)
